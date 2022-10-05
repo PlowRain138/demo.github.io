@@ -1,0 +1,95 @@
+ul{
+    list-style-type:none;
+    
+}
+
+.repadding{
+    padding: 0;
+}
+
+._margin{
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.boder2{
+    
+    border-bottom:1px solid #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 30;
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;    
+    /* 垂直置中 */
+    align-content: center;      
+    flex-wrap: wrap;
+}
+
+.text{
+    margin: 0px;
+    
+}
+.bg1{
+    background: rgb(189, 253, 245);
+    /*position: relative;*/
+    width: auto;
+    height: 100px;
+}
+
+.item{
+   
+    display: flex;
+    justify-content: start  ;
+    /*border: 1px solid #000;*/
+}
+.text30{
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    border: 1px solid  #000;
+}
+
+.context0th{
+    margin:0px;
+    padding: 0;
+    position: relative  ;
+    top: -35px;
+    left: 0px;
+    display: flex;
+    width: auto;
+}
+
+.context1th{
+    display: flex;
+    width: auto;
+}
+
+.picture{
+    
+    width: 250px;
+    height: 200px;
+}
+
+.context1th .text{
+    margin-left: 2px;
+    color: #000;
+    font-weight: bold;
+}
+.context1th .text2{
+    color: rgb(255, 153, 0);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.boder1 {
+    padding: 0;
+    margin: 0;
+    border-bottom:1px solid #000;
+}
+
+
