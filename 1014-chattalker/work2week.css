@@ -1,0 +1,430 @@
+/* if 1366 992 576 
+           756 345
+*/
+p{
+    margin-bottom: 0;
+    
+}
+
+ol, ul {
+	list-style: none;
+}
+.Mean{
+    max-width: 80%;
+    padding-left: 11%;
+}
+
+.home{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg)
+    , url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg)
+    , url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    
+    background-repeat: no-repeat;
+    background-position: -15vw 700px,85vw 55%,5vw 79%;
+    
+    /*
+    background-size: 25%, 20vw, 150px;
+    background-position-x: -15vw, 85vw, 0.5vw;
+    background-position-y: 700px, 50%, 76%;
+    max-width: 100%;
+    max-height: 100vh;
+    */
+    
+}
+
+
+
+.bg1 {
+    /*
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+    
+    max-width: 1px;
+    height: 768px;850 768*/
+    
+    max-height: 768px;
+    position: absolute;
+    background-size: contain;
+    right: 0;
+    top: 0px;
+    z-index: -1;
+    background-repeat: no-repeat;
+
+    
+}
+
+.headbtween{
+    display: flex;
+    justify-content:space-between;
+}
+
+.headbtween .a1{
+    max-width: 100%;
+    margin-top: 30px;
+}
+@media  (max-width:768px){ 
+    .headbtween .a1{
+        width: 50%;
+    }
+    
+}
+
+.RedBg1{
+     /* Layout Properties */
+    text-align: center;
+    width: 128px;
+    height: 40px;
+    margin-top: 30px;
+    
+    /* UI Properties */
+    z-index: 1;
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    opacity: 1;
+}
+
+.RedBt1
+{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    transform: translate(25%, -50%);
+    
+    }
+
+.picture1
+{
+    margin-left: 0;
+    height:500px;
+    
+    /*
+    width: 70%;
+    height: 70%;
+    margin-left: 24%;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+    background-repeat: no-repeat;
+    background-size: contain;*/ 
+}   
+
+@media (max-width: 768px) {
+    .picture1{
+        height: 148px;
+        
+    }
+    
+}
+
+a{ text-decoration:none} a:hover{ text-decoration:none} 
+h1{
+    font-size: 18px;
+    color: #56C4C5;
+}
+
+.context{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    /*
+    margin-top: 14%;
+    margin-left: 17%;*/
+
+}
+.context .box{
+    border: 100px solid #fff;
+}
+.context .text1{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0px;
+    margin-left: 0;
+}
+h2{
+    text-align: center;
+    padding-top: 25%;
+    
+    padding-bottom: 3%;
+    font-size: 32px ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.th2{
+    max-width: 1366px;
+}
+.content{
+    
+    text-align: center;
+    display: flex;
+    justify-content:space-between; 
+    flex-wrap: wrap;
+    
+}
+.content li{
+    width: 30%;
+}
+/* if 1366 992 576 
+           756 345
+*/
+@media (max-width: 768px) {
+    .content li{
+        padding-bottom: 24px;
+        width: 53%;
+
+    }
+    
+}
+.content .pt1{
+    padding-left: 0%;
+    width: 30%; 
+}
+
+.content .text1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.content .text2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    
+    padding-bottom: 0;
+    font-size: 32px ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.content3{
+    max-width: 1366px;
+    text-align: center;
+}
+
+.content3 .chater{
+    
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;   
+}
+/* if 1366 992 576 
+           756 345
+*/
+@media (max-width:992px) {
+    .content3 .chater{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:579px) {
+    .content3 .chater{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.chater .picture{
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #00000014;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1366px;
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+/* if 1366 992 576 
+           756 345
+*/
+.container .card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 47px;
+    row-gap: 28px; ;
+}
+@media (max-width:992px) {
+    .container .card{
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    
+}
+
+
+
+.container .card .bg{
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #00000014;
+    background-color: #fff;
+}
+
+.container .card .picturebg{
+    padding: 6%;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px #00000014;
+    background-color: #fff;
+}
+
+.container .content{
+    padding-left: 10%;
+    padding-bottom: 0;
+    /*padding-right: 15%;*/
+    display: flex;
+    align-items:center;
+    text-align: start;
+}
+
+.container .content .text{
+     
+    font-size: 32px ;
+    font-weight: bold;
+}
+
+.container .content .RedBg1{
+    /* Layout Properties */
+   text-align: center;
+   width: 128px;
+   height: 40px;
+   margin-top: 30px;
+   
+   /* UI Properties */
+   z-index: 1;
+   background: #56C4C5 0% 0% no-repeat padding-box;
+   border-radius: 22px;
+   opacity: 1;
+}
+
+.container1{
+    max-width: 1366px;
+}
+
+
+.container1 .cards{
+    padding-top: 10%;
+    display: grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+}
+@media (max-width:992px) {
+    .container1 .cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 32px;
+    }
+}
+@media (max-width:576px) {
+    .container1 .cards{
+        grid-template-columns: repeat(1,1fr);
+        gap: 32px;
+    }
+}
+
+
+.container1 .cards .card{
+    position: relative;
+    padding: 10%;
+    box-shadow: 0 2px 10px #00000014;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.container1 .cards .card .chater
+{
+    position: absolute;
+    top: -18%;
+    left: 10%;
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.sflex{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.star{
+    align-self:flex-end;
+}
+.container1 .cards .card .text{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer .footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+}
+
+.footer .footer-info .RedBg1{
+    /* Layout Properties */
+   text-align: center;
+   width: 128px;
+   height: 40px;
+   margin-top: 30px;
+   
+   /* UI Properties */
+   z-index: 1;
+   background: #56C4C5 0% 0% no-repeat padding-box;
+   border-radius: 22px;
+   opacity: 1;
+}
+
+.footer .footer-info .RedBg1 .RedBt1
+{
+   display: flex;
+   color: rgb(255, 255, 255);
+   font-size: 16px;
+   position: relative;
+   top: 50%;
+   transform: translate(25%, -50%);
+   
+   }
+
+.footer .footer-info .text{
+    padding-top: 260px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
+.top-button{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 26px;
+    bottom: 26px;
+    background-color: #56C4C5;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.footer .bottomtext{
+    max-width: auto;
+    background-color:#F5F5F5;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.t1{
+    background-color: #FF5D50;
+    height: 100px;
+}
