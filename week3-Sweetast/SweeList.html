@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetList</title>
+    <link rel="stylesheet" href="SweetListCss.css">
+    <script>
+        /*以下複製header*/
+        /*看不懂 能監聽螢幕就對了*/
+        var width = 0;
+        var index = 0;
+    
+        var controlIndex=false;
+        
+        function updateWindowSize() {
+            if (document.body && document.body.offsetWidth) {
+            width = document.body.offsetWidth;
+            }
+            if (document.compatMode=='CSS1Compat' &&
+                document.documentElement &&
+                document.documentElement.offsetWidth ) {
+            width = document.documentElement.offsetWidth;
+            }
+            if (window.innerWidth) {
+                width = window.innerWidth;
+                 //width改變觸發的函示
+                 //用index控制區間判斷次數，避免符合寬度不斷觸發
+                if(width >=768) 
+                {
+                    console.log("螢幕大於768");        
+                    index = 0;
+                    fn1();
+                    
+                }
+                if(width <768){
+                    index=1;
+                    console.log("螢幕小於768 ="+setNode); 
+                    fn2();
+                    
+               }
+            }
+        }
+    
+        window.onresize = function(event) {
+            updateWindowSize();
+        }
+        
+        function chooseTab(){
+            if(controlIndex&& setNode1.parentNode)
+                setNode1.parentNode.removeChild(setNode1);
+            else
+                document.getElementById("Moblie").appendChild(setNode1);
+            controlIndex = !controlIndex;
+        }
+        /*header 以上複製過去*/
+    </script>
+    
+</head>
+<body>
+    <div id="head" class="header">
+        <div id="container" class="container">
+                <!-- moblie start -->
+            <div id="this"></div>
+            <div id="Moblie" class="moblieHeader">
+                <div class="mHeader-flex0">
+                    <img class="mHeader-btn" src = "dehaze-24px.png" alt="" onclick="chooseTab()">
+                    <img style="width: 114px;" src = "logotype-lg-dark.svg" alt="">
+                    <a href="SweetCart.html"> <img src = "shopping_cart.png" alt=""></a>
+                </div>
+                <div id="mChooise" class="mChooiseBg">
+                    <ul>
+                        <li> <a href="index.html">首頁</a> </li>
+                        <li> <a href="SweeList.html">甜點</a> </li>
+                        <li> <a href="SweetLogin.html">登入</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- moblie end -->
+            
+            <div  id="MainWrap"  class="header-logo-flex">
+                <div>   
+                    <a href="#"> <img class="header-logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="index.html"></a>
+                </div>
+                <div >
+                    <ul class="head-bt-ul">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="SweeList.html">甜點</a></li>
+                        <li><a href="SweetLogin.html">登入</a></li>
+                        <li><a href="SweetCart.html"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/shopping_cart.png" style="height: 26px;"  alt="shop cart"></a>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+            </div>
+
+            
+                    
+
+
+        </div>
+    </div>
+    <!--Main-->
+    <div class="Main">
+        <div class="desktop-Main-slectList">
+            
+            <ul class="left">
+                <h1>甜點類別</h1>
+                <a href="#">
+                    <li class="slectListBg">
+                        <p>所有甜點（48）</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="slectListBg">
+                        <p>本日精選（10）</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="slectListBg">
+                        <p>人氣推薦（26）</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="slectListBg">
+                        <p>新品上市（12）</p>
+                    </li>
+                </a>
+            </ul>
+
+            <!--right -->
+            <div class="home-item-container">
+                <div class="wrap">
+                    <img src="p-1.png" alt="">
+                    <div class="home-HotToday">本日精選</div>
+                    <div class="list-name-price">
+                        <div class="boderline">
+                            <h2>水果黑森林</h2>
+                        </div>
+                        <div class="boderline">
+                            <h2>NT$450</h2>
+                        </div>
+                    </div>
+                    <p class="Home-AddCarBg"><a href="#">加入購物車</a></p>
+    
+                </div>
+                
+                <div class="wrap">
+                    <img src="p-2.png" alt="">
+                    <div class="home-HotToday">本日精選</div>
+                    <div class="list-name-price">
+                        <div class="boderline">
+                            <h2>焦糖馬卡龍</h2>
+                        </div>
+                        <div class="boderline">
+                            <h2>NT$450</h2>
+                        </div>
+                    </div>
+                    <p class="Home-AddCarBg"><a href="#">加入購物車</a></p>
+    
+                </div>
+                
+                <div class="wrap">
+                    <img src="p-3.png" alt="">
+                    <div class="home-HotToday">本日精選</div>
+                    <div class="list-name-price">
+                        <div class="boderline">
+                            <h2>草莓派</h2>
+                        </div>
+                        <div class="boderline">
+                            <h2>NT$450</h2>
+                        </div>
+                    </div>
+                    <p class="Home-AddCarBg"><a href="#">加入購物車</a></p>
+    
+                </div>
+                <div class="wrap">
+                    <img src="p-4.png" alt="">
+                    <div class="home-HotToday">本日精選</div>
+                    <div class="list-name-price">
+                        <div class="boderline">
+                            <h2>焦糖馬卡龍</h2>
+                        </div>
+                        <div class="boderline">
+                            <h2>NT$450</h2>
+                        </div>
+                    </div>
+                    <p class="Home-AddCarBg"><a href="#">加入購物車</a></p>
+    
+                </div>
+                <div class="wrap">
+                    <img src="p-5.png" alt="">
+                    <div class="home-HotToday">本日精選</div>
+                    <div class="list-name-price">
+                        <div class="boderline">
+                            <h2>焦糖馬卡龍</h2>
+                        </div>
+                        <div class="boderline">
+                            <h2>NT$450</h2>
+                        </div>
+                    </div>
+                    <p class="Home-AddCarBg"><a href="#">加入購物車</a></p>
+    
+                </div>
+                <div class="wrap">
+                    <img src="p-6.png" alt="">
+                    <div class="home-HotToday">本日精選</div>
+                    <div class="list-name-price">
+                        <div class="boderline">
+                            <h2>焦糖馬卡龍</h2>
+                        </div>
+                        <div class="boderline">
+                            <h2>NT$450</h2>
+                        </div>
+                    </div>
+                    <p class="Home-AddCarBg"><a href="#">加入購物車</a></p>
+    
+                </div>
+                
+            </div>
+        </div>
+        <!------------------------>
+        <div class="tabPage">
+            <a class="tabPagw-Bt" href="#"><img src="arrow_left.png" alt=""></a>
+            <a class="tabPagw-Bt" href="#"><p>1</p></a>
+            <a class="tabPagw-Bt" href="#"><p>2</p></a>
+            <a class="tabPagw-Bt" href="#"><p>3</p></a>
+            <a class="tabPagw-Bt" href="#"> <img src="arrow_right.png" alt=""></a>
+        </div>
+
+
+    </div>
+    <!--footer-->
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-Email">
+            <div class="Email-logo">
+                <img style="height: 40px; display: block;" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-light.svg" alt="">
+                <h2>訂閱你我的甜蜜郵件</h2>
+            </div>
+
+            <div class="input">
+                <input class="input-form" placeholder="請輸入您的信箱" type="mail">
+                <div id="as" class="input-bt">
+                    <a href="#"><img class="imgb" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png" alt=""> </a>
+                </div >
+                <img class="input-logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/mail-24px.png" alt="">      
+                <div margin-top: 1px; class= "footer-M-YellowBg"> </div>
+
+            </div>
+        </div>
+        <!--footer Content-->
+        
+    </div>
+    <!--end-->
+    <div class="footer-content-bg">
+        <div class="wrap-left">
+            <img style="height: 27px;" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-lg-dark.svg" alt="">
+            <p class="footer-text">07-1234-5678 <br> sweetaste@email.com <br> 800 高雄市新興區幸福路 520 號</p>
+            <div class="footer-logo">
+                <img style="height: 32px; " src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-line%40.svg" alt="">
+                <img style="height: 32px; " src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-facebook.svg" alt="">
+            </div>
+        </div>
+
+        <div class="wrap-right">
+            <img style="height: 219px;" src="text-sm.svg" alt="">
+            <p>© 2018 Sweetaste* All Rights Reserved</p>
+        </div>
+
+    </div>
+    <!-- footer Mobile -->
+    <div class="footerMobile">
+        <div class="footer-M-Email">
+            <div class="footer-M-Content">
+                <div class="Email-M-logo">
+                    <img style="margin-bottom: 24px;height: 40px; display: block;" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-light.svg" alt="">
+                    
+                    <h2 style="margin-bottom: 24px;">訂閱你我的甜蜜郵件</h2>
+                </div>
+                <div class="M-input">
+                    <input class="input-M-form" placeholder="請輸入您的信箱" type="mail">
+                    <div id="as" class="input-bt">
+                        <a href="#"><img  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png" alt=""> </a>
+                    </div >
+                    <img class="input-M-logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/mail-24px.png" alt="">      
+                    <div class= "footer-M-YellowBg"> </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-M-logo">
+        
+            <div style="margin-left:24px ; padding-top: 24px;">
+                <div class="footer-M-pt1"> </div>
+
+                <p class="footer-M-p">07-1234-5678 <br> sweetaste@email.com 800 <br> 高雄市新興區幸福路 520 號</p>
+                <div class="footer-M-linkFlex">
+                    <div class="footer-M-linept"></div>
+                    <div class="footer-M-fbpt"></div>
+                </div>
+                <p class="footer-M-p" style="margin-top: 24px;">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var setNode, setNode1 = document.getElementById("mChooise");
+        var setNodeMainwrap =document.getElementById("MainWrap");
+        const setNodeMoblie = document.getElementById("Moblie");
+        const setNodeHead = document.getElementById("as");
+        (function start(){
+            console.log("觸發成功");
+            setNode = document.getElementById('MainWrap');
+            updateWindowSize();
+            if(setNode1.parentNode)
+                setNode1.parentNode.removeChild(setNode1);
+        }()
+        
+        );
+
+        function fn1(){
+            setNode  = setNodeMainwrap;
+            console.log("mainwrap is " + setNode);
+            document.getElementById("this").appendChild(setNode);
+            setNode  = setNodeMoblie;
+            if(setNode.parentNode !=null) 
+                    setNode.parentNode.removeChild(setNode);
+        }
+
+        function fn2(){
+            setNode  = setNodeMoblie;
+            document.getElementById("this").appendChild(setNode);
+            setNode  = setNodeMainwrap;
+            if(setNode.parentNode)
+                setNode.parentNode.removeChild(setNode);
+        }
+    </script>
+    
+    
+</body>
+</html>
